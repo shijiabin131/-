@@ -1,0 +1,288 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="Current">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4B77F852-0A51-4F3B-A557-5418AD0665CD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>库存管理系统</RootNamespace>
+    <AssemblyName>库存管理系统</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <ApplicationRevision>0</ApplicationRevision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="common.cs" />
+    <Compile Include="frm_about.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_about.Designer.cs">
+      <DependentUpon>frm_about.cs</DependentUpon>
+    </Compile>
+    <Compile Include="货物查询\frm_cordon_query.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="货物查询\frm_cordon_query.Designer.cs">
+      <DependentUpon>frm_cordon_query.cs</DependentUpon>
+    </Compile>
+    <Compile Include="货物查询\frm_ingoods_query.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="货物查询\frm_ingoods_query.Designer.cs">
+      <DependentUpon>frm_ingoods_query.cs</DependentUpon>
+    </Compile>
+    <Compile Include="货物查询\frm_outgoods_query.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="货物查询\frm_outgoods_query.Designer.cs">
+      <DependentUpon>frm_outgoods_query.cs</DependentUpon>
+    </Compile>
+    <Compile Include="出库入库\frm_ingoods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="出库入库\frm_ingoods.Designer.cs">
+      <DependentUpon>frm_ingoods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="出库入库\frm_outgoods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="出库入库\frm_outgoods.Designer.cs">
+      <DependentUpon>frm_outgoods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="货物管理\frm_goods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="货物管理\frm_goods.Designer.cs">
+      <DependentUpon>frm_goods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="货物管理\frm_goods_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="货物管理\frm_goods_add.Designer.cs">
+      <DependentUpon>frm_goods_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="货物管理\frm_goods_mod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="货物管理\frm_goods_mod.Designer.cs">
+      <DependentUpon>frm_goods_mod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="供应商管理\frm_supplyer_mod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="供应商管理\frm_supplyer_mod.Designer.cs">
+      <DependentUpon>frm_supplyer_mod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="供应商管理\frm_supplyer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="供应商管理\frm_supplyer.Designer.cs">
+      <DependentUpon>frm_supplyer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="供应商管理\frm_supplyer_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="供应商管理\frm_supplyer_add.Designer.cs">
+      <DependentUpon>frm_supplyer_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="用户管理\frm_adduser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="用户管理\frm_adduser.Designer.cs">
+      <DependentUpon>frm_adduser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="用户管理\frm_deluser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="用户管理\frm_deluser.Designer.cs">
+      <DependentUpon>frm_deluser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_login.Designer.cs">
+      <DependentUpon>frm_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_main.Designer.cs">
+      <DependentUpon>frm_main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="用户管理\frm_moduser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="用户管理\frm_moduser.Designer.cs">
+      <DependentUpon>frm_moduser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="用户管理\frm_repwd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="用户管理\frm_repwd.Designer.cs">
+      <DependentUpon>frm_repwd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="仓库管理\frm_stores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="仓库管理\frm_stores.Designer.cs">
+      <DependentUpon>frm_stores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="仓库管理\frm_stores_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="仓库管理\frm_stores_add.Designer.cs">
+      <DependentUpon>frm_stores_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="仓库管理\frm_stores_mod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="仓库管理\frm_stores_mod.Designer.cs">
+      <DependentUpon>frm_stores_mod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inifile.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frm_about.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_about.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="货物查询\frm_cordon_query.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_cordon_query.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="货物查询\frm_ingoods_query.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_ingoods_query.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="货物查询\frm_outgoods_query.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_outgoods_query.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="出库入库\frm_ingoods.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_ingoods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="出库入库\frm_outgoods.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_outgoods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="货物管理\frm_goods.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_goods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="货物管理\frm_goods_add.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_goods_add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="货物管理\frm_goods_mod.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_goods_mod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="供应商管理\frm_supplyer_mod.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_supplyer_mod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="供应商管理\frm_supplyer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_supplyer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="供应商管理\frm_supplyer_add.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_supplyer_add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="用户管理\frm_adduser.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_adduser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="用户管理\frm_deluser.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_deluser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_login.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_main.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="用户管理\frm_moduser.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_moduser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="用户管理\frm_repwd.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_repwd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="仓库管理\frm_stores.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_stores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="仓库管理\frm_stores_add.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_stores_add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="仓库管理\frm_stores_mod.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_stores_mod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="sql.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
